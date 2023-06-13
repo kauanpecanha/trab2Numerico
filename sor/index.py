@@ -75,10 +75,10 @@ while tol > epislon:
     Rnovo4 = R4(xk[0], xk[1], xk[2], xk[3])
     xk[3] = X4(w, Rnovo4, xk[3])
 
-    print(f'Valor do Residuo 1 = {Rnovo1:.4f}')
-    print(f'Valor do Residuo 2 = {Rnovo2:.4f}')
-    print(f'Valor do Residuo 3 = {Rnovo3:.4f}')
-    print(f'Valor do Residuo 4 = {Rnovo4:.4f}')
+    print(f'Valor do Residuo 1 = {Rnovo1}')
+    print(f'Valor do Residuo 2 = {Rnovo2}')
+    print(f'Valor do Residuo 3 = {Rnovo3}')
+    print(f'Valor do Residuo 4 = {Rnovo4}')
 
     temporaria = xk - xk_old
 
@@ -87,3 +87,11 @@ while tol > epislon:
 
     print(f'Tolerancia = {tol:.4f}')
     print(f'Iterações = {inter}')
+
+
+
+
+print(f'\n\n\nO resultado final pode ser visto abaixo:'
+      +f'\nR1={Rnovo1:.15f}\nR2={Rnovo2:.15f}\nR3={Rnovo3:.15f}\nR4={Rnovo4:.15f}\n'
+      +f'\nX1={xk[0]}\nX2={xk[1]}\nX3={xk[2]}\nX4={xk[3]}'
+      +f'\n\nObtidos após {inter} iterações')
