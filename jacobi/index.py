@@ -18,7 +18,7 @@ def CalcDiferenca(x_d, x_a):
     return(abs(x_d - x_a))
     
 
-epsilon = (10**(-15))
+epsilon = float(input('Entre com E: '))
 
 A = np.array(
     [
