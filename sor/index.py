@@ -85,13 +85,6 @@ while tol > epislon:
     # Cálculo da nova tolerância
     tol = CalcTol(temporaria, xk)
 
-    print(f'Tolerancia = {tol:.4f}')
+    print(f'Tolerancia = {tol}')
     print(f'Iterações = {inter}')
 
-
-
-
-print(f'\n\n\nO resultado final pode ser visto abaixo:'
-      +f'\nR1={Rnovo1:.15f}\nR2={Rnovo2:.15f}\nR3={Rnovo3:.15f}\nR4={Rnovo4:.15f}\n'
-      +f'\nX1={xk[0]}\nX2={xk[1]}\nX3={xk[2]}\nX4={xk[3]}'
-      +f'\n\nObtidos após {inter} iterações')
