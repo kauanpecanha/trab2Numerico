@@ -88,3 +88,10 @@ while tol > epislon:
     print(f'Tolerancia = {tol}')
     print(f'Iterações = {inter}')
 
+print('-'*100)
+print(f'\n\n\nMÉTODO DE SOR\nO resultado final pode ser visualizado abaixo:\n\n'
+      +f'\nResíduos:\n\n'
+      +f'\nR1={Rnovo1:.15f}\nR2={Rnovo2:.15f}\nR3={Rnovo3:.15f}\nR4={Rnovo4:.15f}\n'
+      +f'\n\nRaízes:\n\n'
+      +f'\nX1={xk[0]}\nX2={xk[1]}\nX3={xk[2]}\nX4={xk[3]}'
+      +f'\n\nObtidos após {inter} iterações.\n\n')
