@@ -76,3 +76,10 @@ while tol > epislon:
     print(f'Iterações= {inter}')
 
     y = np.array([Calc1(x2, x3, x4), Calc2(x1, x3, x4), Calc3(x1, x2, x4), Calc4(x1, x2, x3)])
+
+
+print('-'*100)
+print(f'\n\n\nMÉTODO DE GAUSS-SEIDEL\nO resultado pode ser visualizado abaixo:\n\n'
+        +f'\nTolerancia atingida foi {tol} < {epislon}'
+        +f'\nTotal de iterações: {inter}\nE o vetor resultados é:'
+        +f'\n\nX1 = {x1}\nX2 = {x2}\nX3 = {x3}\nX4 = {x3}\n\n')

@@ -58,6 +58,9 @@ while(True):
         print(f'{np.max(control)} > {epsilon}. Continua na próxima iteração.')
         contador+=1
     else:
-        print(f'{np.max(control)} < {epsilon}. Tolerância atingida.')
-        print(f'Total de iterações: {contador+1}, e o vetor de resultados é: {x}')
+        print('-'*100)
+        print(f'\n\n\nMÉTODO DE JACOBI\nO resultado pode ser visualizado abaixo:\n\n'
+              +f'\nTolerancia atingida foi {np.max(control)} < {epsilon}'
+              +f'\nTotal de iterações: {contador}\nE o vetor resultados é:'
+              +f'\n\nX1 = {x1_d}\nX2 = {x2_d}\nX3 = {x3_d}\nX4 = {x4_d}\n\n')
         break
