@@ -2,9 +2,9 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-epislon = float(input('Entre com o valor E: '))
+epislon = 0.000000000000001
 tol = epislon + 1  # Inicializar tol com um valor maior que epislon
-w = 1.1  # fator de relaxação
+w = 1.196  # fator de relaxação
 inter = 0  # definindo número de iterações
 
 # Definindo a matriz ============================================
@@ -94,4 +94,5 @@ print(f'\n\n\nMÉTODO DE SOR\nO resultado final pode ser visualizado abaixo:\n\n
       +f'\nR1={Rnovo1:.15f}\nR2={Rnovo2:.15f}\nR3={Rnovo3:.15f}\nR4={Rnovo4:.15f}\n'
       +f'\n\nRaízes:\n\n'
       +f'\nX1={xk[0]}\nX2={xk[1]}\nX3={xk[2]}\nX4={xk[3]}'
-      +f'\n\nObtidos após {inter} iterações.\n\n')
+      +f'\n\nObtidos após {inter} iterações.\n\n'
+      f'\n\nFator de relaxação: {w}')
