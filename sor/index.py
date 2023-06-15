@@ -4,7 +4,7 @@ import numpy as np
 
 epislon = 0.000000000000001
 tol = epislon + 1  # Inicializar tol com um valor maior que epislon
-w = 1.196  # fator de relaxação
+w = 1.19  # fator de relaxação
 inter = 0  # definindo número de iterações
 
 # Definindo a matriz ============================================
